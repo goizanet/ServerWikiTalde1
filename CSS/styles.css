@@ -4,9 +4,14 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 150px;
     align-items: center;
 
+}
+
+.logo {
+    height: 10%;
+    width: 10%;
 }
 
 .navigation {
@@ -28,7 +33,7 @@
 
 .navigation a:hover {
     background-color: #094446;
-    transform: scale(1.2) perspective(1px);
+    transform: scale(1.1) perspective(1px);
 }
 
 .navigation ul li {
