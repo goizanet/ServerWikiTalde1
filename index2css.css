@@ -1,0 +1,43 @@
+/* HEADER */
+header{
+    height: 10%;
+    align-items: center;
+    background-color: #EF7B45;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    height: 100%;
+    width: 200px;
+}
+
+.navbar {
+    font-family: 'Secular One';
+    width: 100%;
+    background-color: #042A2B;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background-color: #5EB1BF;
+}  
+
+.active {
+    background-color: #5EB1BF;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}

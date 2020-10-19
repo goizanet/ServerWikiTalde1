@@ -1,14 +1,12 @@
 /* HEADER */
 header{
-    top: 0;
-    left: 0;
-    right: 0;
     height: 10%;
     align-items: center;
     background-color: #EF7B45;
     text-align: center;
+    width: 100%;
 }
-    
+
 .logo {
     height: 100%;
     width: 200px;
@@ -27,19 +25,20 @@ header{
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding-left: 25%;
+    padding-left: 26%;
 }
 }
 
 @media only screen and (max-width: 750px) {
-.navigation {
-    overflow: hidden;
-    font-family: 'Secular One';
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
+    .navigation {
+        overflow: hidden;
+        font-family: 'Secular One';
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding-left: 15%;
+    }
 }
 
 .navigation a {
@@ -65,13 +64,6 @@ header{
 .navigation * {
     display: inline;
 }
-
-
-
-
-
-
-
 
 /* FOOTER */
 .footer {
