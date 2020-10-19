@@ -203,7 +203,7 @@ header{
 
 
 /* FOOTER */
-.footer {
+/* .footer {
     background: #042A2B;
     color: #CDEDF6;
     height: 200px;
@@ -215,4 +215,44 @@ header{
     color: #d4f6ff;
     height: 50px;
     text-align: center;
+}
+/* Footer de la pagina */
+    
+footer{
+    
+    background: #042A2B;
+    color: #CDEDF6;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 170px;
+    
+    
+} 
+/* parte 1 */
+.footerP1{
+    
+    color: #d4f6ff;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+}
+.footerP1 a{
+    padding-right: 5%;
+    padding-left: 1%;
+    vertical-align: middle;
+    
+}
+.footerP1 img{
+    vertical-align:middle;
+    width: 40px;
+}
+
+
+/* parte 2 */
+.footerP2{
+    text-align: center;
+    background-color:  #042A2B;;
+    color: #d4f6ff;
+    padding-bottom: 1%;
 }
