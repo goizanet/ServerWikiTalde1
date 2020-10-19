@@ -1,15 +1,17 @@
 /* HEADER */
-.header {
-    background-color: #EF7B45;
+header{
     top: 0;
     left: 0;
     right: 0;
+    height: 10%;
+    align-items: center;
+    background-color: #EF7B45;
     text-align: center;
 }
-
+    
 .logo {
-    height: 13%;
-    width: 13%;
+    height: 100%;
+    width: 200px;
 }
 
 .fondoNavigation {
