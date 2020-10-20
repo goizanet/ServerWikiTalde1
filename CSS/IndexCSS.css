@@ -1,8 +1,9 @@
 html{font-family: 'Secular One';}
 /* HEADER */
 .content{
-    /*da al contenido "altura mínima" para que el footer nunca suba más de ahí, pero sí para que baje si aumenta el contenido*/
-  min-height: calc(100vh - 70px);
+/*da al contenido "altura mínima" para que el footer nunca suba más de ahí, pero sí para que baje si aumenta el contenido*/
+    min-height: calc(100vh - 70px);
+    background-color: #CDEDF6;
 }
 
 header{
@@ -48,10 +49,10 @@ header{
 }
 /* ORRIALDEAREN MAMIA */
     /* KOLOREA */
-    section{
-      background-color: #CDEDF6;
-      padding-top: 1%;
-    }
+section{
+    background-color: #CDEDF6;
+    padding-top: 1%;
+}
 
 /* SLIDER */
 .slider {
@@ -174,37 +175,35 @@ header{
 }
 /* ARTIKULUAK */
     /* Flex bitartez ordenatuko dugu atal hau */
-    .articulos{
-        display:flex;
-        width: 90%;
-        margin-top: 26px;
-        margin-left: 5%;
-        text-align: inherit;
-        font-family: 'Helvetica';
-        padding-bottom: 4%;
-        
+.articulos{
+    display:flex;
+    width: 90%;
+    margin-top: 26px;
+    margin-left: 5%;
+    text-align: inherit;
+    font-family: 'Helvetica';
+    padding-bottom: 4%;
+    
 
-    }
-    .articulo1{
-        
-        width: 100%;
-        height: 100%;
-       
-        background-color: white;
-        padding: 2%;
-    }
-    .articulo2{
-        width: 100%;
-        height:100%;
-        margin-left: 10%;
-        
-        background-color:white;
-        padding: 2%;
-    }
-    .articulo1 h1 , .articulo2 h1{color: #5eb2bf;}
-    .articulo1 p , .articulo2 p{font-style: normal;}
-    .articulo2 li{margin-top: 3%;}
-    .articulo1 p{text-indent: 10%;}
+}
+.articulo1{
+    width: 100%;
+    height: 100%;   
+    background-color: white;
+    padding: 2%;
+}
+.articulo2{
+    width: 100%;
+    height:100%;
+    margin-left: 10%;
+    
+    background-color:white;
+    padding: 2%;
+}
+.articulo1 h1 , .articulo2 h1{color: #5eb2bf;}
+.articulo1 p , .articulo2 p{font-style: normal;}
+.articulo2 li{margin-top: 3%;}
+.articulo1 p{text-indent: 10%;}
 
 
 /* SLIDER */
