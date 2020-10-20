@@ -119,6 +119,11 @@ section{
 .articulo2 p , p{font-style: normal;}
 .articulo2 p{text-indent: 10%;}
 
+@media screen and (max-width: 900px) {
+    div.articulos {
+        font-size: 50%;
+    }
+}
 /* Footer de la pagina */  
 footer{
     
