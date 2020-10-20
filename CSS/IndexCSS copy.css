@@ -1,3 +1,9 @@
+html{font-family: 'Secular One';}
+.content{
+    /*da al contenido "altura mínima" para que el footer nunca suba más de ahí, pero sí para que baje si aumenta el contenido*/
+  min-height: calc(100vh - 70px);
+  background-color:  #CDEDF6;
+}
 /* HEADER */
 header{
     height: 10%;
