@@ -1,4 +1,10 @@
+html{font-family: 'Secular One';}
 /* HEADER */
+.content{
+    /*da al contenido "altura mínima" para que el footer nunca suba más de ahí, pero sí para que baje si aumenta el contenido*/
+  min-height: calc(100vh - 70px);
+}
+
 header{
     height: 10%;
     align-items: center;
@@ -13,7 +19,6 @@ header{
 }
 
 .navbar {
-    font-family: 'Secular One';
     width: 100%;
     background-color: #042A2B;
     overflow: auto;
