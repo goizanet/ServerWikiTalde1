@@ -29,50 +29,67 @@
 
     <!-- Orriaren mamia -->
     <section>
+        <!-- Slider zatia -->
         <div class="slider">
             <div class="sliderInner">
-                <!-- 3 Input radio type- ekoak sortzen ditugu name berekoak (aukera bakarrekoak dira) baina id desberdinekoak -->
-            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-            <div class="carousel-item">
-                <img src="/Media/Slider1.PNG">
-            </div>
-            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-            <div class="carousel-item">
-                <img src="/Media/Slider2.PNG">
-            </div>
-            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-            <div class="carousel-item">
-                <img src="/Media/Slider3.PNG">
-            </div>
-            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-            <label for="carousel-2" class="carousel-control next control-1">›</label>
-            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-            <label for="carousel-3" class="carousel-control next control-2">›</label>
-            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-            <label for="carousel-1" class="carousel-control next control-3">›</label>
-            <ol class="carousel-indicators">
-                <li>
-                    <label for="carousel-1" class="carousel-bullet">•</label>
-                </li>
-                <li>
-                    <label for="carousel-2" class="carousel-bullet">•</label>
-                </li>
-                <li>
-                    <label for="carousel-3" class="carousel-bullet">•</label>
-                </li>
-            </ol>
+                <!-- Radio elementuarekin egiten dugu aukera batekoa delako -->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <img src="/Media/Slider1.PNG">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="/Media/Slider2.PNG">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="/Media/Slider3.PNG">
+                </div>
+                <!-- Geziak ikusi ajal izateko slider-aren atal bakoitzean...-->
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <!-- Puntutxoetan klik eginez ere sliderra mugituko da, horretarako... -->
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+
             </div>
         </div>
+        <!-- Artikuluen zatia -->
         <div class="articulos">
-            <div class="articulo1"></div>
-            <div class="articulo2"></div>
+            <div class="articulo1">
+                <h1>Nor gara?</h1>
+                    <p>Kaixo! Web orrialde bat daukazu eta serbitzari bar behar duzu ikusi ahal izateko?
+                    ServerWiki, 4 gazteek zuzendutako enpresa bat da zerbitzu hau eskaintzen duena.
+                    Are gehiago, zerbitzari bat montatu nahi baduzu, web horrialde honetan aurkeztuko dizugu pausuz pausu nola sortu bat. Prest zaude?
+                    </p>
+            </div>
+            <div class="articulo2">
+                <h1>Zergatik gu hautatu?</h1>
+                <p>
+                    <ol>
+                        <li>Aholkularitza baino askoz gehiago garelako, enpresarako zerbitzu integrala egiten dugu, bezeroak ez dezan ezerez arduratu behar.</li>
+                        <li>Gure eraginkortasunagatik, emaitzak ziurtatzen ditugu.</li>
+                        <li>Profesionalak garelako eta gure bezeroen arrakasta ziurtatzeko lan egiten dugulako.</li>
+                        <li>Ezarritako epeak betetzea ziurtatzen dugulako.</li>
+                        <li>Gardentasunarekin, konfiantzarekin eta enpatiarekin lan egiten dugulako. Bezero bakoitza tratatzen dugulako bakarra izango balitz bezala.</li>
+                    </ol>
+                </p>
+            </div>
         </div>
     </section>
-        <!--  -->
-
-    <!-- Web orriaren kontenidoa kargatuko da hemen   -->
-    <main class="main"></main>
-
 
     <!-- Orriaren behekaldea - ESTATIKOA: Footer -->
     <!-- <footer class="footer">
@@ -84,7 +101,23 @@
         <div class="footer-bottom">
             <p>Talde 1 &copy; 2020</p>
         </div>
-    </footer>  -->
+    </footer>   -->
+    <footer>
+        <div class="footerP1">
+
+                <img  src="/Media/Footer/instagra.png">
+                <a>@ServerWiki</a>
+           
+                <img  src="/Media/Footer/twitter-logo-6.png">
+                <a>@ServerWiki</a>
+          
+                <img src="/Media/Footer/gmail.png">
+                <a>ServerWiki@gmail.com</a>
+        </div>
+        <div class="footerP2">
+            <a>@Talde5</a>
+        </div>
+    </footer>
     
 </body>
 </html>
