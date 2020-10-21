@@ -48,36 +48,9 @@ header{
     }
 }
 
-/* FOOTER */
-/* .footer {
-    background: #042A2B;
-    color: #CDEDF6;
-    height: 200px;
-    
-}
-
-.footer .footer-bottom {
-    background: #042A2B;
-    color: #d4f6ff;
-    height: 50px;
-    text-align: center;
-} */
-/* Footer de la pagina */
-    
-footer{
-    
-    background: #042A2B;
-    color: #CDEDF6;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 170px;
-    
-    
-} 
 /* parte 1 */
 .footerP1{
-    
+    background-color: #042A2B;
     color: #d4f6ff;
     align-items: center;
     text-align: center;
@@ -94,11 +67,17 @@ footer{
     width: 40px;
 }
 
-
 /* parte 2 */
 .footerP2{
     text-align: center;
     background-color:  #042A2B;;
     color: #d4f6ff;
     padding-bottom: 1%;
+}
+
+@media screen and (max-width: 650px) {
+    footer a {
+        float: none;
+        display: block;
+    }
 }

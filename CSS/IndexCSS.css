@@ -2,7 +2,7 @@ html{font-family: 'Secular One';}
 /* HEADER */
 .content{
     /*da al contenido "altura mínima" para que el footer nunca suba más de ahí, pero sí para que baje si aumenta el contenido*/
-  min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
 }
 
 header{
@@ -40,7 +40,7 @@ header{
     background-color: #5EB1BF;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .navbar a {
         float: none;
         display: block;
@@ -48,10 +48,10 @@ header{
 }
 /* ORRIALDEAREN MAMIA */
     /* KOLOREA */
-    section{
-      background-color: #CDEDF6;
-      padding-top: 1%;
-    }
+section{
+    background-color: #CDEDF6;
+    padding-top: 1%;
+}
 
 /* SLIDER */
 .slider {
@@ -356,7 +356,7 @@ footer{
 } 
 /* parte 1 */
 .footerP1{
-    
+    background-color: #042A2B;
     color: #d4f6ff;
     align-items: center;
     text-align: center;
@@ -373,11 +373,17 @@ footer{
     width: 40px;
 }
 
-
 /* parte 2 */
 .footerP2{
     text-align: center;
     background-color:  #042A2B;;
     color: #d4f6ff;
     padding-bottom: 1%;
+}
+
+@media screen and (max-width: 650px) {
+    footer a {
+        float: none;
+        display: block;
+    }
 }
