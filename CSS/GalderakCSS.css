@@ -1,0 +1,83 @@
+/* web orriaren mamiari estiloa emango diogu */
+    /* Gridsekin ordenatuko dugu */
+section{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 15%;
+    grid-template-areas: 
+    'main'
+    'botoiak'
+    ;
+    padding-bottom: 24%;
+    min-height: 50%;
+    
+}
+
+ /* Flex bitartez ordenatuko dugu atal hau */
+
+ .main{
+    grid-area: 'main';
+    display:flex;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    text-align: inherit;
+    font-family: 'Helvetica';
+    background-color: white;
+    padding-bottom: 5%;
+    
+
+}
+.galdera{
+    width: 100%;
+    background-color: white;
+    padding: 3%;
+    float: left;
+}
+
+.erantzuna{
+    width: 100%;
+    float: right;
+    background-color: white;
+    padding: 3%;
+}
+.articulo1 h1 , .articulo2 h1{color: #5eb2bf;}
+.articulo1 p , .articulo2 p{font-style: normal;}
+.articulo2 li{margin-top: 3%;}
+.articulo1 p{text-indent: 10%;}
+
+
+/* Aurreko eta atzeko botoien estilua */
+.botoiak{
+    
+    margin-left: 25%;
+    grid-area: 'botoiak';
+    width: 50%;
+    background-color: white;
+    padding-bottom: 2%;
+    
+}
+p .botonSiguiente{
+    float:right;
+   width: 7%;
+   height: 7%;
+   margin-right: 4%;
+   min-width: 30px;
+   
+  
+   
+}
+   
+
+p .botonAnterior{
+    float: left;
+   width: 7%;
+   height: 7%;
+  margin-left: 4%;
+  min-width: 30px;
+   
+
+   
+  
+} 
