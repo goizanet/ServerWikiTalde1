@@ -1,16 +1,34 @@
 html{font-family: 'Secular One';}
 /* HEADER */
 
-@media screen and (max-width: 500px) {
-    .content{
+
+/* web orriaren mamiari estiloa emango diogu */
+    /* Grid-ekin ordenatuko dugu */
+
+/* Pantaila handia dagoenean */
+@media screen and (min-width: 700px) {
+    .section{
+        font-size: 20px;
+        width: 70%;
+        margin-left: 15%;
+        height: 600px;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:80% 20%;
+        grid-template-areas: 
+        'main'
+        'botoiak'
+        ;
+        background-color:white;
+        padding-bottom: 3%;
+        /* min-width: 550px; */
     
-      padding-bottom: 30%;
+        
     }
-}
-@media screen and (min-width: 500px) {
-    .content{
-      
-      padding-bottom: 10%;
+    .content{ 
+    padding-bottom: 10%;
     }
 }
 
@@ -34,11 +52,40 @@ section{
 
  /* Flex bitartez ordenatuko dugu atal hau */
 
+/* Pantaila oso txikia dagoenean */
+@media screen and (max-width: 700px) {
+    .section{
+        font-size: 20px;
+        width: 90%;
+        margin-left: 5%;
+        height:auto;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:95% 20%;
+        grid-template-areas: 
+        'main'
+        'botoiak'
+        ;
+        background-color:white;
+        padding-bottom: 15%;
+        /* min-width: 550px; */
+
+        
+    }
+    .content{ 
+    padding-bottom: 10%;
+    }
+    
+}
+/* Grid bitartez ordenatuko dugu atal hau */
+/* main div-ren barruan galdera eta erantzuna atalak egongo dira */
 .main{
     grid-area: 'main';
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 50%;
+    grid-template-rows: 25% 75%;
     grid-template-areas: 
     'galdera'
     'erantzuna'
@@ -48,35 +95,40 @@ section{
     text-align: inherit;
     font-family: 'Helvetica';
     background-color: white;
-
 }
+/* Galdera atalaren propietateak */
 .galdera{
     grid-area: 'galdera';
     width: 90%;
     margin-left: 3%;
     padding-top: 3%;
+    padding: 3%;
 }
-
+.galdera li{margin-top: 3%;}
+.galdera1 p{text-indent: 10%;}
+/* Erantzunaren propietateak */
 .erantzuna{
     grid-area: 'erantzuna';
     width: 92%;
-    padding-top: 3%;
+    margin-top: 3%;
+    padding:3%;
     margin-left: 3%;
 }
-.galdera h1 , .erantzuna h1{color: #5EB1BF; font-size: 25px;}
-.galdera p , .erantzuna p{font-style: normal;}
-.galdera li{margin-top: 3%;}
-.galdera1 p{text-indent: 10%;}
 
-
+/* Propietate komunak */
+.galdera h1 , .erantzuna h1{
+    color: #5EB1BF; font-size: 25px;
+}
+.galdera p , .erantzuna p{
+    font-style: normal;
+}
+/* botoiak div-ren barruan ezkerreko eta eskumako botoiak egongo dira */
 /* Aurreko eta atzeko botoien estilua */
 .botoiak{
-
     grid-area: 'botoiak';
     width: 100%;
-    height:100%;
-    background-color:white;
-    padding-bottom: 2%;
+    height:80%;
+    padding-top: 3%;
     min-width: 50%;
     margin-top: 10%;
 

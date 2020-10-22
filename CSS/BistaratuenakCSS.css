@@ -1,0 +1,121 @@
+html{font-family: 'Secular One';}
+.content{
+    /*da al contenido "altura mínima" para que el footer nunca suba más de ahí, pero sí para que baje si aumenta el contenido*/
+    min-height: calc(100vh - 70px);
+    background-color:  #CDEDF6;
+}
+/* HEADER */
+header{
+    height: 10%;
+    align-items: center;
+    background-color: #EF7B45;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    height: 100%;
+    width: 200px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #042A2B;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background-color: #5EB1BF;
+}  
+
+.active {
+    background-color: #5EB1BF;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+.biBotoiak {
+    padding: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.card1, .card2, .card3 {
+    display: inline-block;
+    width: fit-content;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 70px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+/* FOOTER */
+/* .footer {
+    background: #042A2B;
+    color: #CDEDF6;
+    height: 200px;
+    
+}
+
+.footer .footer-bottom {
+    background: #042A2B;
+    color: #d4f6ff;
+    height: 50px;
+    text-align: center;
+} */
+/* Footer de la pagina */
+    
+footer{
+    
+    background: #042A2B;
+    color: #CDEDF6;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 170px;
+    
+    
+} 
+/* parte 1 */
+.footerP1{
+    
+    color: #d4f6ff;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+}
+.footerP1 a{
+    padding-right: 5%;
+    padding-left: 1%;
+    vertical-align: middle;
+    
+}
+.footerP1 img{
+    vertical-align:middle;
+    width: 40px;
+}
+
+
+/* parte 2 */
+.footerP2{
+    text-align: center;
+    background-color:  #042A2B;;
+    color: #d4f6ff;
+    padding-bottom: 1%;
+}
+

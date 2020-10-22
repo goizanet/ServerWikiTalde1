@@ -61,6 +61,7 @@ section{
 }
 .center2 { /*Centrar los botones en la mitad de la pagina*/
     text-align: center;
+    margin-top: 2%;
 }
 
 .pagination {
@@ -115,8 +116,7 @@ section{
 .articulo1 h1 , h1{color: #5eb2bf;}
 .articulo1 h4{padding-left: 5%;}
 .articulo1 p , p{font-style: normal;}
-.articulo1 p{text-indent: 10%;}
-.articulo1 p{text-indent: 10%;}
+.articulo1 p{padding-left: 10%;}
 
 /* Footer de la pagina */  
 footer{

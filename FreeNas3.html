@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Artikuluak</title>
+        <link rel="stylesheet" href="CSS/ArtikuluakCSS.css">
+        <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="Media/fav-icon.png">
+    </head>
+    <body>
+        <div class="content">
+            <!-- Orriaren goikaldea - ESTATIKOA: Logoa eta nabigatzailea -->
+            <header class="header">
+                <div class="container">
+                    <!-- Hemen logoa txertatu behar da -->
+                    <img class="logo" src="Media/Logo.png" alt="Wiki Server">
+                    <!-- Nabigatzailea, bakoitzak beraren orria kargatuko du -->
+                    <div class="fondoNavigation">
+                        <div class="navbar">
+                            <a href="index.html">HASIERA</a> 
+                            <a href="#">EGUNERATUAK</a> 
+                            <a href="#">BISITATUENAK</a> 
+                            <a href="#">BERRIAK</a>
+                            <a class="active" href="FreeNas.html">ARTIKULUAK</a>
+                            <a href="Galderak.html">FAQ</a>
+                        </div>
+                </div>
+                </div>
+            </header>
+        <div>
+            <div class="center">
+                <div class="pagination">
+                    <a href="#">«</a>
+                    <a href="#" class="active">Free Nas</a>
+                    <a href="#">Proxmox</a>
+                    <a href="#">Instalazioak</a>
+                    <a href="#">»</a>
+                </div>
+            </div>
+            <div class="center2">
+            <div class="pagination">
+                <a href="FreeNas1.html">DOKUMENTUAREN AZALPENA</a>
+                <a href="FreeNas2.html">HARDWARE BALDINTZAK</a>
+                <a href="FreeNas3.html" class="active">INSTALAZIOA</a>
+                <a href="FreeNas4.html">INST. PROXMOX</a>
+            </div>
+            </div>
+            <!-- Artikuluak -->
+            <div class="articulos">
+                <div class="articulo1">
+                    <h1>Free Nas</h1>
+                        <h3>LEHEN PAUSOAK</h3>
+                        <h4>Hasierako baldintzak instalazioa hasteko</h4>
+                            <p>FreeNAS-eko webgunetik azken “imagen” jaitsiko dugu:</p>
+                                <p><a href="https://www.freenas.org/download-freenas-release/">https://www.freenas.org/download-freenas-release/</a></p>
+                            <p style="color: red;">Hasierako instalazioa egin ahal izateko monitore bat beharko dugu (instalazioaren ondoren hau deskonektatu ahalko da).</p>
+                            <p style="color: red;">Instalazioa egin eta gero, beste ordenagailu bat beharko dugu internetarekin GUI-ra sartu ahal izateko..</p>
+                            <p>Behin “imagen”-a deskargatu dugula hutsik dagoen USB edo diska batean sartuko dugu. </p>
+                            <p><a href="https://www.youtube.com/watch?v=GpnHwE22VPE&feature=emb_logo">https://www.youtube.com/watch?v=GpnHwE22VPE&feature=emb_logo</a></p>
+
+                        <h4>Instalazioa - Zerbitzari Fisikoan</h4>
+                        <p>1. &nbsp Aukeratutako makinan USB/Diska sartuko dugu gure “device” eta FreeNAS-eko “imagen”-arekin.</p>
+                        <p>2. &nbsp BIOS-era sartu, eta sistema boot-device-a FreeNAS-ekoa aukeratu egingo dugu.</p>
+                        <p>3. &nbsp Sistema berrabiarazi.</p>
+                        <p>4. &nbsp FreeNAS-eko instalazio menua pantailan agerraraztean lehenengo aukera (1) aukeratuko dugu instalazioa hasteko.</p>
+                        <p>5. &nbsp Kontsolako ‘Setup menu’-a kargatzen zaigunean, Install/Upgrade aukeratu.</p>
+                        <p>6. &nbsp Hurrengo menuan FreeNAS erabiltzeko ze drive erabiliko den aukeratzeko eskatuko digute. Hemen boot device-a aukeratuko dugu, kontuz, <b>ez “storage disk”-a.</b> Orokorrean boot device-a storagekoa baino tamaina txikiagoa izango du. Nabigatzeko Aukeratzeko espazio barra sakatu. Ondoren OK sakatu.</p>
+                        <p>7. &nbsp Ondorengo pantailan, “Yes” sakatu instalazioarekin jarraitu ahal izateko.</p>
+                        <p>8. &nbsp Jarraian FreeNAS-era sartzeko erabiliko dugun pasahitza sartzeko eskatuko digute.</p>
+                        <p>9. &nbsp FreeNAS Boot Mode menu pantailarekin topatzen garenean Boot via BIOS aukeratuko dugu (orokorrean ‘motherboard’ guztiekin funtzionatzen baitu eta Hardware zaharragoarekin be).</p>
+                        <p>10. &nbsp Gure instalazioa hasiko da, eta minutu gutxi batzuk beharko ditu hau bukatzeko.</p>
+                        <p>11. &nbsp OK sakatu sistema berrabiarazteko eta gero instalazioa egiteko erabili dugun diska edo USB-a kenduko dugu. Adi, sistemak bi aldiz galdetu egingo dizu diska edo USB-a kendu izan duzun edo ez.</p>
+                        <p>12. &nbsp Sistema berrabiaraziko da Boot device-tik.</p>
+                        <p>13. &nbsp FreeNAS kargatzen den lehen aldia denez, mezuak agertuko dira pantaila osoan zehar kargatzen den bitartean.</p>
+                        <p>14. &nbsp Amaitzen denean Console Setup-arekin  topatuko gara IP helbide batekin batera (azken hau 0.0.0.0. baldin bada, interneteko kablea konektatuta dagoela eta DHPC zerbitzari bat duela ziurtatu).</p>
+                        <p>15. &nbsp Orain beste ordenagailu batean web-arakatzailearen bilatzailean IP helbide hori bilatuko dugu, eta jarraian FreeNAS-eko login menuarekin topatu beharko ginen. “root” erabiltzeailearekin logueatu goiko pausu batean sartu duzun pasahitzarekin.</p>
+                        <p>16. &nbsp LISTO! FreesNAS instalatu berri duzu.</p>
+                        <p><a href="https://www.youtube.com/watch?v=xTnlYWjLUE0&feature=emb_logo">https://www.youtube.com/watch?v=xTnlYWjLUE0&feature=emb_logo</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footerP1">
+                    <img  src="/Media/Footer/instagra.png">
+                    <a>@ServerWiki</a>
+                    <img  src="/Media/Footer/twitter-logo-6.png">
+                    <a>@ServerWiki</a> 
+                    <img src="/Media/Footer/gmail.png">
+                    <a>ServerWiki@gmail.com</a>
+            </div>
+            <div class="footerP2">
+                <a>@Talde5</a>
+            </div>
+        </footer>
+    </body>
+    </html>
