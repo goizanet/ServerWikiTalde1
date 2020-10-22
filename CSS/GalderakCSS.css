@@ -26,18 +26,15 @@ section{
     grid-template-rows: 95% 15%;
     grid-template-areas: 
     'main'
-    'botoiak'
-    ;
+    'botoiak';
     background-color: white;
     padding-bottom: 10%;
-    /* min-width: 550px; */
-   
-    
+    /* min-width: 550px; */  
 }
 
  /* Flex bitartez ordenatuko dugu atal hau */
 
- .main{
+.main{
     grid-area: 'main';
     display: grid;
     grid-template-columns: 100%;
@@ -51,10 +48,6 @@ section{
     text-align: inherit;
     font-family: 'Helvetica';
     background-color: white;
-    
-    
-
-    
 
 }
 .galdera{
@@ -62,8 +55,6 @@ section{
     width: 90%;
     margin-left: 3%;
     padding-top: 3%;
-
-    
 }
 
 .erantzuna{
@@ -71,7 +62,6 @@ section{
     width: 92%;
     padding-top: 3%;
     margin-left: 3%;
-   
 }
 .galdera h1 , .erantzuna h1{color: #5EB1BF; font-size: 25px;}
 .galdera p , .erantzuna p{font-style: normal;}
@@ -81,8 +71,7 @@ section{
 
 /* Aurreko eta atzeko botoien estilua */
 .botoiak{
-    
-    
+
     grid-area: 'botoiak';
     width: 100%;
     height:100%;
@@ -90,29 +79,26 @@ section{
     padding-bottom: 2%;
     min-width: 50%;
     margin-top: 10%;
-   
-    
-    
+
 }
 a .botonSiguiente{
     float:right;
-   width: 7%;
-   height: 60%;
-   margin-right: 4%;
-   min-width: 50px;
-   max-width: 60px;
-   margin-top: 3%;
-  
-   
+    width: 7%;
+    height: 60%;
+    margin-right: 4%;
+    min-width: 50px;
+    max-width: 60px;
+    margin-top: 3%;
+
 }
-   
+
 
 a .botonAnterior{
-  float: left;
-  width: 7%;
-  height: 60%;
-  margin-left: 4%;
-  min-width: 50px;
-  max-width: 60px;
-  margin-top: 3%;
+    float: left;
+    width: 7%;
+    height: 60%;
+    margin-left: 4%;
+    min-width: 50px;
+    max-width: 60px;
+    margin-top: 3%;
 } 

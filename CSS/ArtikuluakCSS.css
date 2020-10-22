@@ -55,16 +55,16 @@ section{
 }
 
 /* Artikuluak aukeratu*/
-
 .center { /*Centrar los botones en la mitad de la pagina*/
     text-align: center;
     margin-top: 2%;
-    
+}
+.center2 { /*Centrar los botones en la mitad de la pagina*/
+    text-align: center;
 }
 
 .pagination {
     display: inline-block;
-    margin-bottom: 1cm;   
 }
 
 .pagination a {
@@ -94,6 +94,7 @@ section{
     }
 }
 
+
 /* Artikuluak */
 .articulos{
     display: flex;
@@ -112,7 +113,9 @@ section{
 }
 
 .articulo1 h1 , h1{color: #5eb2bf;}
+.articulo1 h4{padding-left: 5%;}
 .articulo1 p , p{font-style: normal;}
+.articulo1 p{text-indent: 10%;}
 .articulo1 p{text-indent: 10%;}
 
 /* Footer de la pagina */  
