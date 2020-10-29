@@ -5,152 +5,120 @@ html{font-family: 'Secular One';}
 /* web orriaren mamiari estiloa emango diogu */
     /* Grid-ekin ordenatuko dugu */
 
-/* Pantaila handia dagoenean */
-@media screen and (min-width: 700px) {
-    .section{
+    .main{
+        padding: 3%;
         font-size: 20px;
         width: 70%;
-        margin-left: 15%;
-        height: 600px;
+        margin-left: 12%;
+        height: auto;
         font-family: 'Open Sans', sans-serif;
         margin-top: 5%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows:80% 20%;
+        grid-template-rows:20% 60% 20%;
         grid-template-areas: 
-        'main'
-        'botoiak'
+        'galdera '
+        'erantzuna '
+        'botoiezker botoieskuin'
         ;
         background-color:white;
-        padding-bottom: 3%;
-        /* min-width: 550px; */
-    
         
     }
+
+    /* Galdera atalaren propietateak */
+    .galdera{
+        grid-area: 'galdera';
+        width: 100%;
+        background-color: white;
+    }
+    .galdera li{margin-top: 3%;}
+    .galdera p{text-indent: 10%;}
+    /* Erantzunaren propietateak */
+    .erantzuna{
+        grid-area: 'erantzuna';
+        width: 100%;
+        background-color: white;
+        margin-bottom: 20%;
+    }
+
+    /* Propietate komunak */
+    .galdera h1 , .erantzuna h1{
+        color: #5EB1BF; font-size: 25px;
+    }
+    .galdera p , .erantzuna p{
+        font-style: normal;
+    }
+    /* botoiak div-ren barruan ezkerreko eta eskumako botoiak egongo dira */
+    /* Aurreko eta atzeko botoien estilua */
+    .botoiak{
+        margin-top: auto;
+        grid-area: 'botoiak';
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'btnA btnS';
+
+    }
+    a .botonSiguiente{
+        grid-area: 'btnS';
+        width: 8%;
+        float: right;
+    }
+
+
+    a .botonAnterior{
+        grid-area: 'btnA';
+        width: 8%;
+        float: left;;
+    
+    } 
+/* Pantaila handia dagoenean */
+@media screen and (min-width: 700px) {
+   
     .content{ 
+       
     padding-bottom: 10%;
     }
 }
 
 /* web orriaren mamiari estiloa emango diogu */
     /* Gridsekin ordenatuko dugu */
-section{
-    width: 50%;
-    margin-left: 25%;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 95% 15%;
-    grid-template-areas: 
-    'main'
-    'botoiak';
-    background-color: white;
-    padding-bottom: 10%;
-    /* min-width: 550px; */  
-}
 
- /* Flex bitartez ordenatuko dugu atal hau */
 
 /* Pantaila oso txikia dagoenean */
 @media screen and (max-width: 700px) {
-    .section{
-        font-size: 20px;
-        width: 90%;
-        margin-left: 5%;
-        height:auto;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows:95% 20%;
-        grid-template-areas: 
-        'main'
-        'botoiak'
-        ;
-        background-color:white;
-        padding-bottom: 15%;
-        /* min-width: 550px; */
-
-        
+    /* Galderaren propietateak */
+    .galdera{
+        grid-area: 'galdera';
+        width: 100%;
+        padding-bottom: 13%;
+        background-color: white;
     }
+    /* Erantzunaren propietateak */
+    .erantzuna{
+        grid-area: 'erantzuna';
+        width: 100%;
+        background-color: white;
+        padding-bottom: 20%;
+    }
+
+    a .botonSiguiente{
+        grid-area: 'btnS';
+        width: 18%;
+        float: right;
+    }
+
+
+    a .botonAnterior{
+        grid-area: 'btnA';
+        width: 18%;
+        float: left;;
+    
+    } 
     .content{ 
     padding-bottom: 10%;
     }
     
 }
-/* Grid bitartez ordenatuko dugu atal hau */
-/* main div-ren barruan galdera eta erantzuna atalak egongo dira */
-.main{
-    grid-area: 'main';
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 75%;
-    grid-template-areas: 
-    'galdera'
-    'erantzuna'
-    ;
-    width: 100%;
-    height: 100%;
-    text-align: inherit;
-    font-family: 'Helvetica';
-    background-color: white;
-}
-/* Galdera atalaren propietateak */
-.galdera{
-    grid-area: 'galdera';
-    width: 90%;
-    margin-left: 3%;
-    padding-top: 3%;
-    padding: 3%;
-}
-.galdera li{margin-top: 3%;}
-.galdera1 p{text-indent: 10%;}
-/* Erantzunaren propietateak */
-.erantzuna{
-    grid-area: 'erantzuna';
-    width: 92%;
-    margin-top: 3%;
-    padding:3%;
-    margin-left: 3%;
-}
 
-/* Propietate komunak */
-.galdera h1 , .erantzuna h1{
-    color: #5EB1BF; font-size: 25px;
-}
-.galdera p , .erantzuna p{
-    font-style: normal;
-}
-/* botoiak div-ren barruan ezkerreko eta eskumako botoiak egongo dira */
-/* Aurreko eta atzeko botoien estilua */
-.botoiak{
-    grid-area: 'botoiak';
-    width: 100%;
-    height:80%;
-    padding-top: 3%;
-    min-width: 50%;
-    margin-top: 10%;
-
-}
-a .botonSiguiente{
-    float:right;
-    width: 7%;
-    height: 60%;
-    margin-right: 4%;
-    min-width: 50px;
-    max-width: 60px;
-    margin-top: 3%;
-
-}
-
-
-a .botonAnterior{
-    float: left;
-    width: 7%;
-    height: 60%;
-    margin-left: 4%;
-    min-width: 50px;
-    max-width: 60px;
-    margin-top: 3%;
-} 
