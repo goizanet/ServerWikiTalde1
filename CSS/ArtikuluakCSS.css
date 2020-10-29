@@ -118,6 +118,13 @@ section{
 .articulo1 p , p{font-style: normal;}
 .articulo1 p{padding-left: 10%;}
 .articulo1 img{padding-left: 10%;}
+.articulo1 ol{
+    margin-top: -3%;
+    padding-left: 11%;}
+.articulo1 ol img{width: 50%; height: 40%; padding-top: 4%;}
+.articulo1 ol li{margin: 5%;}
+
+
 
 /* Footer de la pagina */  
 footer{
