@@ -30,7 +30,7 @@
             <div class="center">
                 <div class="pagination">
                     <a href="Debian.html">«</a>
-                    <a href="FreeNas2.html" >Free Nas</a>
+                    <a href="FreeNas2.html" >FreeNas</a>
                     <a href="Proxmox.html">Proxmox</a>
                     <a href="Debian.html">Debian</a>
                     <a href="DNS.html"class="active">DNS</a>
@@ -44,16 +44,48 @@
                 <div class="articulo1">
                     <h1>DNS</h1>
                         <h3>ZER DA, DNS-A?</h3>
-                        <p>DNS-a Domain Name System esan nahi du, domeinuari dagokion zerbitzarian idazteaz gain, benetako helbidea, 
+                        <p>&nbsp&nbspDNS-a Domain Name System esan nahi du, domeinuari dagokion zerbitzarian idazteaz gain, benetako helbidea, 
                             IP izeneko zenbakizko erlazioa, domeinuaren izenean itzultzeko balioko digu, hau da: IP XXX.XXX.XXX.X 
                             izan beharrean <a href="#">www.serverwiki.com</a> erakutsiko digu.</p>
+                        
                         <h3>NOLA FUNTZIONATZEN DU?</h3>
-                        <p>Erabiltzaileak domeinua idazterakoan (<a href="#">www.server-wiki.com</a>) eta enter botoia 
+                        <p>&nbsp&nbspErabiltzaileak domeinua idazterakoan (<a href="#">www.server-wiki.com</a>) eta enter botoia 
                             sakatzerakoan nabigatzaileak DNS zerbitzariarekin gure domeinuaren IP helbidea zein den begiratuko du eta,
                             topatzerakoan, nabigatzaileak IP XXX.XXX.XXX.X itzuliko du, honekin erabiltzeileak gure 
                             webgunea ikusi ahalko du.</p>    
+                        
                         <h3>NOLA ALDATU DNS-A</h3>
-                        <p>Erabiltzaileak Proxmoxa konfiguratzen duen lehen aldian DNS-aren izena gordeko du, aldatu nahi izatekotan, kanpoko programa bat erabiliko dugu: BIND9.</p>
+                        <p>&nbspErabiltzaileak Proxmoxa konfiguratzen duen lehen aldian DNS-aren izena gordeko du, aldatu nahi izatekotan, kanpoko programa bat erabiliko dugu: <a href= "https://wiki.debian.org/Bind9#Installation">BIND9</a>, programa honen erabilerarekin, DNS zerbitzari bat sare batean jarriko du eta IP helbideak izen batengatik aldatzeko aukera emango digu. <br><br>
+                            &nbsp&nbspBehin programa instalatuta daukagunean hurrengo pausoak jarraituko ditugu:<br><br>
+                        </p>    
+
+                        <ol>
+
+                            <li>forward fitxeroan hurrengo aldaketak egingo ditugu nahi ditugun datuekin (kontuz! deklarazioaren amaieran “.” bat jarri behar da beti): </li>
+                            <img src="Media/DNS/dns1.png" id="argazkiaPausoka"><br>
+
+                            <li>reverse fitxeroan hurrengo aldaketak egingo ditugu nahi ditugun datuekin (kontuz! deklarazioaren amaieran “.” bat jarri behar da beti):</li>
+                            <img src="Media/DNS/dns2.png" id="argazkiaPausoka"><br>
+
+                            <li>named.conf.local fitxeroan hurrengo aldaketak egingo ditugu nahi ditugun datuekin (kontuz! deklarazioaren amaieran “.” bat jarri behar da beti):</li>
+                            <img src="Media/DNS/dns3.png" id="argazkiaPausoka"><br>
+
+                            <li>resolv.conf fitxeroan hurrengo aldaketak egingo ditugu nahi ditugun datuekin (kontuz! deklarazioaren amaieran “.” bat jarri behar da beti):</li>
+                            <img src="Media/DNS/dns4.png" id="argazkiaPausoka"><br>
+
+                            <li>forward.conf fitxeroan hurrengo aldaketak egingo ditugu nahi ditugun datuekin (kontuz! deklarazioaren amaieran “.” bat jarri behar da beti):</li>
+                            <img src="Media/DNS/dns5.png" id="argazkiaPausoka"><br>
+
+                            <li>Azkenekoz, gure ordenagailuko konfigurazioa aldatuko dugu “kontrol panela”-n “Sareak eta Interneta” sakatuko dugu eta han “Sare konexioak”</li>
+                            <img src="Media/DNS/dns6.png" id="argazkiaPausoka"><br>
+
+                            <li>Nahi dugun sarea aukeratu ondoren eskumako botoia sakatuko dugu eta agertzen zaizkigun aukeren artean “Propietateak” aukeratuko dugu.</li>
+                            <img src="Media/DNS/dns7.png" id="argazkiaPausoka"><br>
+
+                            <li>Azkenekoz, kapturan agerrarazten den aukera horretan bi klik egingo dugu, eta gure DNS-aren helbidea idatziko dugu.</li>
+                            <img src="Media/DNS/dns8.png" id="argazkiaPausoka"><br>
+
+                        </ol>   
                     </div>
             </div>
         </div>

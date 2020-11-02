@@ -31,7 +31,7 @@
             <div class="center">
                 <div class="pagination">
                     <a href="FTP.html">«</a>
-                    <a href="FreeNas2.html" class="active">Free Nas</a>
+                    <a href="FreeNas2.html" class="active">FreeNas</a>
                     <a href="Proxmox.html">Proxmox</a>
                     <a href="Debian.html">Debian</a>
                     <a href="DNS.html">DNS</a>
@@ -45,56 +45,70 @@
                 <a href="FreeNas2.html" class="active">HARDWARE BALDINTZAK</a>
                 <a href="FreeNas3.html">INSTALAZIOA</a>
                 <a href="FreeNas4.html">INST. PROXMOX</a>
+                <a href="Freenas5.html">SEGURTASUN KOPIAK</a>
 
             </div>
             </div>
             <!-- Artikuluak -->
             <div class="articulos">
                 <div class="articulo1">
-                    <h1>FREE NAS</h1>
+                    <h1>FREENAS</h1>
                         <h3>HARDWARE BALDINTZAK</h3>
-                        <p>FreeNAS doako eta open source’-ko Network Attached Storage (NAS) software bat da FreeBSD-an 
-                            (x86, Intel 80386 eta Intel 80486-ko arkitekturatan oinarruta dagoen ‘open source’-ko sistema eragile bat da). 
-                            FreeNAS-ak 64-bit x86-ko ia edozein PC edo makina birtualean hasieratuko da baina, hardware zuzen bat aukeratzea 
-                            oso garrantzitsua da FreeNAS-ak egiten duen bete behar garrantzitsuena egiten uzteko: zure informazioa babestu.</p>
+                            <p>&nbsp FreeNAS doako eta open source’-ko Network Attached Storage (NAS) software bat da FreeBSD-an 
+                                (x86, Intel 80386 eta Intel 80486-ko arkitekturatan oinarruta dagoen ‘open source’-ko sistema eragile bat da). 
+                                FreeNAS-ak 64-bit x86-ko ia edozein PC edo makina birtualean hasieratuko da baina, hardware zuzen bat aukeratzea 
+                                oso garrantzitsua da FreeNAS-ak egiten duen bete behar garrantzitsuena egiten uzteko: zure informazioa babestu.</p>
                         
                         <h4>Sistemako Baldintza Unibertsalak</h4>
-                            <p>1. &nbsp GUI-A (Graphical user interface) bat erabiliz moldatzen dugunez FreeNAS, web bilatzaile moderno bat erabili beharko dugu beste ordenagailu batean FreeNAS-eko sare berean.</p>
-                            <p>2. &nbsp FreeNAS eta ZFS-ek beharrezko RAID gaitasunak emango dizkigu RAID horren bitartez, gure disken drive-ak elkartu ahalko ditugu beharrezko babesa ematen digun bitartean. Ez da beharrezkoa izango RAID hardware bat erabiltzea eta ez da erabiltzea gomendatzen FreeNASakin. Disko gehigarriak gehitu nahi izatekotan HBA egokitzaileak erabili beharko dira.</p>
+                            <ol id="pausuak">
+                                <li>GUI-A (Graphical user interface) bat erabiliz moldatzen dugunez FreeNAS, web bilatzaile moderno bat erabili beharko dugu beste ordenagailu batean FreeNAS-eko sare berean.</li>
+                                <li>FreeNAS eta ZFS-ek beharrezko RAID gaitasunak emango dizkigu RAID horren bitartez, gure disken drive-ak elkartu ahalko ditugu beharrezko babesa ematen digun bitartean. Ez da beharrezkoa izango RAID hardware bat erabiltzea eta ez da erabiltzea gomendatzen FreeNASakin. Disko gehigarriak gehitu nahi izatekotan HBA egokitzaileak erabili beharko dira.</li>
+                            </ol>
 
                         <h4>Hardware Baldintza Minimoak</h4>
-                            <p>• &nbsp 64-biteko prozesadore bat.</p>
-                            <p>• &nbsp 8GB minimoko Operating System Drive bat (USB).</p>
-                            <p>• &nbsp 8GB-eko RAM-a gomendatuta. (1GB-eko RAM bat drive gehigarri bakoitzeko, gehienez 8 drive onetsiko ditu.</p>
-                            <p>• &nbsp SATA edo SAS drive kontroladore bat (RAID funtzionalitatea desaktibatuta eduki behar du).</p>
-                            <p>• &nbsp Konexio zuzeneko diska bat gutxienez.</p>
-                            <p>• &nbsp Network portu fisiko bat gutxienez.</p>
+                            <ul id="pausuak">
+                                <li>64-biteko prozesadore bat.</li>
+                                <li>8GB minimoko Operating System Drive bat (USB).</li>
+                                <li>8GB-eko RAM-a gomendatuta. (1GB-eko RAM bat drive gehigarri bakoitzeko, gehienez 8 drive onetsiko ditu.</li>
+                                <li>SATA edo SAS drive kontroladore bat (RAID funtzionalitatea desaktibatuta eduki behar du).</li>
+                                <li>Konexio zuzeneko diska bat gutxienez.</li>
+                                <li>Network portu fisiko bat gutxienez.</li>
+                            </ul>
 
                         <h4>Gomendatutako Hardware Baldintzak</h4>
-                            <p>• &nbsp 64-biteko multicore prozesadore bat.</p>
-                            <p>• &nbsp Sistema eragileko unitate bat (16GB-ekoa gomendatzen da).</p>
-                            <p>• &nbsp 16GB edo gehiagoko RAM bat.</p>
-                            <p>• &nbsp SAS edo SATAko bi diska minimo (ispilu kopia) biltegiratze kontroladorera lotuta daudenak.</p>
-                            <p>• &nbsp NAS unitateak (WD Red-a adbidez, 8 unitaterain sistemetako gomendatuta).</p>
-                            <p>• &nbsp Network portu fisiko bat gutxienez (Intel direnak gomendatuta).</p>
+                            <ul id="pausuak">
+                                <li>64-biteko multicore prozesadore bat.</li>
+                                <li>Sistema eragileko unitate bat (16GB-ekoa gomendatzen da).</li>
+                                <li>16GB edo gehiagoko RAM bat.</li>
+                                <li>SAS edo SATAko bi diska minimo (ispilu kopia) biltegiratze kontroladorera lotuta daudenak.</li>
+                                <li>NAS unitateak (WD Red-a adbidez, 8 unitaterain sistemetako gomendatuta).</li>
+                                <li>Network portu fisiko bat gutxienez (Intel direnak gomendatuta).</li>
+                            </ul>
 
                         <h4>Enpresa Txiki eta Ertainetarako Gomendatuta</h4>
-                            <p>• &nbsp 64-biteko multicore prozesadore bat edo bi.</p>
-                            <p>• &nbsp 32GB-eko Operating System Drive-a.</p>
-                            <p>• &nbsp 32GB-eko ECC RAM edo gehiago (gehiago gehitzen badira errendimendua.</p>
-                            <p>• &nbsp Drives:</p>
-                                <p>&nbsp &nbsp • &nbsp 16-raino WD Red Pro </p>
-                                <p>&nbsp &nbsp • &nbsp 16-tik gora WD UltraStar </p>
-                            <p>• &nbsp SLOG (idatzizko erregistroen dispositiboak) Flash/SSD iraungipen handi batean oinarrituta dagoena.</p>
-                            <p>• &nbsp Cache irakurmena egiteko errendimendu handiko SSD-a (L2ARC).</p>
-                            <p>• &nbsp GGutxienezko networkeko bi portu fisiko. 1GbE-tarako Intel erabiltzea gomendagarria da eta 10GbE-tarako Chelsio edota Intel..</p>
-                            <p>• &nbsp Elikadura-iturri erredundanteak.</p>
+                            <ul id="pausuak">
+                                <li>64-biteko multicore prozesadore bat edo bi.</li>
+                                <li>32GB-eko Operating System Drive-a.</li>
+                                <li>32GB-eko ECC RAM edo gehiago (gehiago gehitzen badira errendimendua.</li>
+                                <li>Drives:</li>
+                                    <ul>
+                                        <li>16-raino WD Red Pro </li>
+                                        <li>16-tik gora WD UltraStar </li>
+                                    </ul>
+                                <li>SLOG (idatzizko erregistroen dispositiboak) Flash/SSD iraungipen handi batean oinarrituta dagoena.</li>
+                                <li>Cache irakurmena egiteko errendimendu handiko SSD-a (L2ARC).</li>
+                                <li>GGutxienezko networkeko bi portu fisiko. 1GbE-tarako Intel erabiltzea gomendagarria da eta 10GbE-tarako Chelsio edota Intel..</li>
+                                <li>Elikadura-iturri erredundanteak.</li>
+                            </ul>
 
                         <h4>Enpresetarako Gomendatuta</h4>
-                            <p>• &nbsp Datuak eta eguneratzeak garrantzitsuak badira, iXsystems TrueNAS Enterprise Storage Appliances gomendatzen du fidagarritasun handiagoa izateko, dena beraren errendimenda, datuen babesa, eskalitatea eta 24/7-ko bakea eskeintzen duena.</p>
-
+                            <ul id="pausuak">
+                                <li>Datuak eta eguneratzeak garrantzitsuak badira, iXsystems TrueNAS Enterprise Storage Appliances gomendatzen du fidagarritasun handiagoa izateko, dena beraren errendimenda, datuen babesa, eskalitatea eta 24/7-ko bakea eskeintzen duena.</li>
+                            </ul>
                         <h4>Interfazea</h4>
-                            <p>• &nbsp FreeNAS eta TrueNAS kontrolatu ahal izateko TrueCommnad interfazea gomendatzen dizuegu, honek sistema batetik besterako kudeaketa indartua, sarbideen kontrola eta monitorizazioa eskeintzen baitu.</p>
+                            <ul id="pausuak">
+                                <li>FreeNAS eta TrueNAS kontrolatu ahal izateko TrueCommnad interfazea gomendatzen dizuegu, honek sistema batetik besterako kudeaketa indartua, sarbideen kontrola eta monitorizazioa eskeintzen baitu.</li>
+                            </ul>
                     </div>
             </div>
         </div>

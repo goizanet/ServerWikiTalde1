@@ -31,7 +31,7 @@
             <div class="center">
                 <div class="pagination">
                     <a href="#">«</a>
-                    <a href="FreeNas2.html" class="active">Free Nas</a>
+                    <a href="FreeNas2.html" class="active">FreeNas</a>
                     <a href="Debian.html">Debian</a>
                     <a href="DNS.html">DNS</a>
                     <a href="SSH.html">SSH</a>
@@ -44,39 +44,43 @@
                 <a href="FreeNas2.html">HARDWARE BALDINTZAK</a>
                 <a href="FreeNas3.html" class="active">INSTALAZIOA</a>
                 <a href="FreeNas4.html">INST. PROXMOX</a>
+                <a href="Freenas5.html">SEGURTASUN KOPIAK</a>
             </div>
             </div>
             <!-- Artikuluak -->
             <div class="articulos">
                 <div class="articulo1">
-                    <h1>FREE NAS</h1>
+                    <h1>FREENAS</h1>
                         <h3>LEHEN PAUSOAK</h3>
                         <h4>Hasierako baldintzak instalazioa hasteko</h4>
                             <p>FreeNAS-eko webgunetik azken “imagen” jaitsiko dugu:</p>
-                                <p><a href="https://www.freenas.org/download-freenas-release/">https://www.freenas.org/download-freenas-release/</a></p>
-                            <p style="color: red;">Hasierako instalazioa egin ahal izateko monitore bat beharko dugu (instalazioaren ondoren hau deskonektatu ahalko da).</p>
-                            <p style="color: red;">Instalazioa egin eta gero, beste ordenagailu bat beharko dugu internetarekin GUI-ra sartu ahal izateko..</p>
+                                <a href="https://www.freenas.org/download-freenas-release/" target="_blank" id="deskarga">https://www.freenas.org/download-freenas-release/</a>
+                            <p style="color: red;">Hasierako instalazioa egin ahal izateko monitore bat beharko dugu (instalazioaren ondoren hau deskonektatu ahalko da).<br><br>
+                                Instalazioa egin eta gero, beste ordenagailu bat beharko dugu internetarekin GUI-ra sartu ahal izateko..</p>
                             <p>Behin “imagen”-a deskargatu dugula hutsik dagoen USB edo diska batean sartuko dugu. </p>
-                            <p><a href="https://www.youtube.com/watch?v=GpnHwE22VPE&feature=emb_logo">https://www.youtube.com/watch?v=GpnHwE22VPE&feature=emb_logo</a></p>
+                            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GpnHwE22VPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
                         <h4>Instalazioa - Zerbitzari Fisikoan</h4>
-                        <p>1. &nbsp Aukeratutako makinan USB/Diska sartuko dugu gure “device” eta FreeNAS-eko “imagen”-arekin.</p>
-                        <p>2. &nbsp BIOS-era sartu, eta sistema boot-device-a FreeNAS-ekoa aukeratu egingo dugu.</p>
-                        <p>3. &nbsp Sistema berrabiarazi.</p>
-                        <p>4. &nbsp FreeNAS-eko instalazio menua pantailan agerraraztean lehenengo aukera (1) aukeratuko dugu instalazioa hasteko.</p>
-                        <p>5. &nbsp Kontsolako ‘Setup menu’-a kargatzen zaigunean, Install/Upgrade aukeratu.</p>
-                        <p>6. &nbsp Hurrengo menuan FreeNAS erabiltzeko ze drive erabiliko den aukeratzeko eskatuko digute. Hemen boot device-a aukeratuko dugu, kontuz, <b>ez “storage disk”-a.</b> Orokorrean boot device-a storagekoa baino tamaina txikiagoa izango du. Nabigatzeko Aukeratzeko espazio barra sakatu. Ondoren OK sakatu.</p>
-                        <p>7. &nbsp Ondorengo pantailan, “Yes” sakatu instalazioarekin jarraitu ahal izateko.</p>
-                        <p>8. &nbsp Jarraian FreeNAS-era sartzeko erabiliko dugun pasahitza sartzeko eskatuko digute.</p>
-                        <p>9. &nbsp FreeNAS Boot Mode menu pantailarekin topatzen garenean Boot via BIOS aukeratuko dugu (orokorrean ‘motherboard’ guztiekin funtzionatzen baitu eta Hardware zaharragoarekin be).</p>
-                        <p>10. &nbsp Gure instalazioa hasiko da, eta minutu gutxi batzuk beharko ditu hau bukatzeko.</p>
-                        <p>11. &nbsp OK sakatu sistema berrabiarazteko eta gero instalazioa egiteko erabili dugun diska edo USB-a kenduko dugu. Adi, sistemak bi aldiz galdetu egingo dizu diska edo USB-a kendu izan duzun edo ez.</p>
-                        <p>12. &nbsp Sistema berrabiaraziko da Boot device-tik.</p>
-                        <p>13. &nbsp FreeNAS kargatzen den lehen aldia denez, mezuak agertuko dira pantaila osoan zehar kargatzen den bitartean.</p>
-                        <p>14. &nbsp Amaitzen denean Console Setup-arekin  topatuko gara IP helbide batekin batera (azken hau 0.0.0.0. baldin bada, interneteko kablea konektatuta dagoela eta DHPC zerbitzari bat duela ziurtatu).</p>
-                        <p>15. &nbsp Orain beste ordenagailu batean web-arakatzailearen bilatzailean IP helbide hori bilatuko dugu, eta jarraian FreeNAS-eko login menuarekin topatu beharko ginen. “root” erabiltzeailearekin logueatu goiko pausu batean sartu duzun pasahitzarekin.</p>
-                        <p>16. &nbsp LISTO! FreesNAS instalatu berri duzu.</p>
-                        <p><a href="https://www.youtube.com/watch?v=xTnlYWjLUE0&feature=emb_logo">https://www.youtube.com/watch?v=xTnlYWjLUE0&feature=emb_logo</a></p>
+                            <ol id="pausuak">
+                                <li>&nbsp Aukeratutako makinan USB/Diska sartuko dugu gure “device” eta FreeNAS-eko “imagen”-arekin.</li>
+                                <li>&nbsp BIOS-era sartu, eta sistema boot-device-a FreeNAS-ekoa aukeratu egingo dugu.</li>
+                                <li>&nbsp Sistema berrabiarazi.</li>
+                                <li>&nbsp FreeNAS-eko instalazio menua pantailan agerraraztean lehenengo aukera (1) aukeratuko dugu instalazioa hasteko.</li>
+                                <li>&nbsp Kontsolako ‘Setup menu’-a kargatzen zaigunean, Install/Upgrade aukeratu.</li>
+                                <li>&nbsp Hurrengo menuan FreeNAS erabiltzeko ze drive erabiliko den aukeratzeko eskatuko digute. Hemen boot device-a aukeratuko dugu, kontuz, <b>ez “storage disk”-a.</b> Orokorrean boot device-a storagekoa baino tamaina txikiagoa izango du. Nabigatzeko Aukeratzeko espazio barra sakatu. Ondoren OK sakatu.</li>
+                                <li>&nbsp Ondorengo pantailan, “Yes” sakatu instalazioarekin jarraitu ahal izateko.</li>
+                                <li>&nbsp Jarraian FreeNAS-era sartzeko erabiliko dugun pasahitza sartzeko eskatuko digute.</li>
+                                <li>&nbsp FreeNAS Boot Mode menu pantailarekin topatzen garenean Boot via BIOS aukeratuko dugu (orokorrean ‘motherboard’ guztiekin funtzionatzen baitu eta Hardware zaharragoarekin be).</li>
+                                <li>&nbsp Gure instalazioa hasiko da, eta minutu gutxi batzuk beharko ditu hau bukatzeko.</li>
+                                <li>&nbsp OK sakatu sistema berrabiarazteko eta gero instalazioa egiteko erabili dugun diska edo USB-a kenduko dugu. Adi, sistemak bi aldiz galdetu egingo dizu diska edo USB-a kendu izan duzun edo ez.</li>
+                                <li>&nbsp Sistema berrabiaraziko da Boot device-tik.</li>
+                                <li>&nbsp FreeNAS kargatzen den lehen aldia denez, mezuak agertuko dira pantaila osoan zehar kargatzen den bitartean.</li>
+                                <li>&nbsp Amaitzen denean Console Setup-arekin  topatuko gara IP helbide batekin batera (azken hau 0.0.0.0. baldin bada, interneteko kablea konektatuta dagoela eta DHPC zerbitzari bat duela ziurtatu).</li>
+                                <li>&nbsp Orain beste ordenagailu batean web-arakatzailearen bilatzailean IP helbide hori bilatuko dugu, eta jarraian FreeNAS-eko login menuarekin topatu beharko ginen. “root” erabiltzeailearekin logueatu goiko pausu batean sartu duzun pasahitzarekin.</li>
+                                <li>&nbsp LISTO! FreesNAS instalatu berri duzu.</li>
+                            </ol>
+
+                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xTnlYWjLUE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 </div>
             </div>
         </div>

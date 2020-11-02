@@ -124,6 +124,38 @@ section{
 .articulo1 ol img{width: 50%; height: 40%; padding-top: 4%;}
 .articulo1 ol li{margin: 5%;}
 
+iframe, img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p > a {
+    text-align: center; 
+    margin-left: 30%; 
+    margin-right: 30%; 
+}
+
+#pausuak {
+    margin-top: -3%;
+    margin-left: 9%;
+    padding: 20px;
+}
+
+#pausuak > li {
+    margin: 15px;
+}
+
+#deskarga {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+#argazkiaPausoka {
+    width: 80%;
+    margin-top: -7%;
+}
 
 
 /* Footer de la pagina */  
