@@ -29,13 +29,16 @@
             </header>
             <div class="center">
                 <div class="pagination">
-                    <a href="DNS.html">«</a>
-                    <a href="FreeNas2.html" >Free Nas</a>
-                    <a href="Proxmox.html">Proxmox</a>
-                    <a href="Debian.html">Debian</a>
-                    <a href="DNS.html">DNS</a>
-                    <a href="SSH.html"class="active">SSH</a>
+                    <a href="Ubuntu.html">«</a>
+                    <a href="Ubuntu.html">Ubuntu</a>
+                    <a href="SSH.html" class="active">SSH</a>
                     <a href="FTP.html">FTP</a>
+                    <a href="Proxmox.html">Proxmox</a>
+                    <a href="GitHub.html">GitHub</a>
+                    <a href="FreeNas2.html">FreeNas</a>
+                    <a href="DNS.html">DNS</a>
+                    <a href="Debian.html">Debian</a>
+                    <a href="ApacheEtaMysql.html">Apache eta MySql</a>
                     <a href="FTP.html">»</a>
                 </div>
             </div>
@@ -51,10 +54,19 @@
                         <p>PSSH instalatu ahal izateko hurrengo pausuak jarraitu beharko ditugu:</p>
                             <ol id="pausuak">
                                 <li>Terminal grafikoa zabalduko dugu eta root bezala logeatuko gara eta terminalean hurrengoa idatziko dugu:</li>
-                                <br><img src="Media/SSH/SSH1.png" id="argazkiaPausoka">
+                                <pre>
+                                    <span>apt -y update && apt install ssh</span>
+                                </pre>
                                 <li>Root-a SSH erabiliz logeatzeko baimena emango diogu:</li>
-                                <img src="Media/SSH/SSH2.png"> 
-                                <br><br><br><img src="Media/SSH/SSH3.png" id="argazkiaPausoka">  
+                                <pre>
+                                    <span>sudo su -</span>
+                                    <span>passwd</span>
+                                    <span>nano /etc/ssh/sshd_config</span>
+                                    <span>32:PermitRootLogin yes</span>
+                                    <span>systemctl restart ssh</span>
+                                    <span>ssh root@ip</span>
+                                </pre>
+                                <br><br><br><img src="Media/SSH/SSH.png" id="argazkiaPausoka">  
 
                             </ol>       
                     </div>

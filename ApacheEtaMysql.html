@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Artikuluak</title>
+        <link rel="stylesheet" href="CSS/ArtikuluakCSS.css">
+        <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="Media/fav-icon.png">
+    </head>
+    <body>
+        <div class="content">
+            <!-- Orriaren goikaldea - ESTATIKOA: Logoa eta nabigatzailea -->
+            <header class="header">
+                <div class="container">
+                    <!-- Hemen logoa txertatu behar da -->
+                    <img class="logo" src="Media/Logo.png" alt="Wiki Server">
+                    <!-- Nabigatzailea, bakoitzak beraren orria kargatuko du -->
+                    <div class="fondoNavigation">
+                        <div class="navbar">
+                            <a href="index.html">HASIERA</a> 
+                            
+                            <a href="#">BISITATUENAK</a> 
+                            <a href="#">BERRIAK</a>
+                            <a class="active" href="FreeNas1.html">ARTIKULUAK</a>
+                            <a href="Galderak.html">FAQ</a>
+                        </div>
+                </div>
+                </div>
+            </header>
+        <div>
+            <div class="center">
+                <div class="pagination">
+                    <a href="Debian.html">«</a>
+                    <a href="Ubuntu.html">Ubuntu</a>
+                    <a href="SSH.html">SSH</a>
+                    <a href="FTP.html">FTP</a>
+                    <a href="Proxmox.html">Proxmox</a>
+                    <a href="GitHub.html">GitHub</a>
+                    <a href="FreeNas2.html">FreeNas</a>
+                    <a href="DNS.html">DNS</a>
+                    <a href="Debian.html">Debian</a>
+                    <a href="ApacheEtaMysql.html" class="active">Apache eta MySql</a>
+                    <a href="Ubuntu.html">»</a>
+                </div>
+            </div>
+            <!-- Artikuluak -->
+            <div class="articulos">
+                <div class="articulo1">
+                    <h1>APACHE ETA MYSQL</h1>
+                        <h3>DESKRIBAPENA</h3>
+                        <p>&nbsp&nbspApache HTTP Server doako web-zerbitzariaren software bat da, 
+                           Unix plataformetarako kode irekikoa, eta harekin mundu osoko webguneen 
+                           %46 exekutatzen da. Webguneen jabeei web-eko edukia zerbitzatzeko aukera ematen die.
+                        </p>
+
+                        <br>
+                        
+                        <h3>NOLA EGINGO DUGU</h3>
+                           <ol id="pausuak">
+                               <li><b>Apache:</b> Web serbitzariak sortzeko, horretarako terminalean hurrengo komandoak idatziko ditugu, sistemaren eguneraketarekin batera: 
+                                </li>
+                                <pre>
+                                    <span>$ sudo apt update</span>
+                                    <span>$ sudo apt install apache2</span>
+                                </pre>
+                                <li><b>MySQL:</b> Datu basetara konektatu ahal izateko, aurretik egin dugun bezala, terminalean hurrengo koamndoak idatzi behar ditugu:
+                                </li>
+                                <pre>
+                                    <span>$ sudo apt install mysql-server</span>
+                                </pre>
+                                <ul>
+                                    <li>Instalatu ondoren beste zenbait komandu exekutatu beharko ditugu parametro batzuk kentzeko eta gure konexioa segurua izateko:</li>
+                                    <pre>
+                                        <span>$ sudo mysql_secure_installation</span>
+                                    </pre>
+                                    <li>Ondoren pasahitzak balidatzeko plugin-a konfiguratu nahi duzun galdetuko dizu, baietz erantzun:</li>
+                                    <pre>
+                                        <span><em>VALIDATE PASSWORD PLUGIN can be used to test passwords</em></span>
+                                        <span><em>and improve security. It checks the strength of password</em></span>
+                                        <span><em>and allows the users to set only those passwords which are</em></span>
+                                        <span><em>secure enough. Would you like to setup VALIDATE PASSWORD plugin?</em></span>
+                                        <span><em>Press y|Y for Yes, any other key for No: </em></span>
+                                        <span>Y</span>
+                                        <span><em>There are three levels of password validation policy:</em></span>
+                                        <span><em>LOW    Length >= 8</em></span>
+                                        <span><em>MEDIUM Length >= 8, numeric, mixed case, and special characters</em></span>
+                                        <span><em>STRONG Length >= 8, numeric, mixed case, special characters and dictionary file</em></span>   
+                                        <span><em>Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:</em></span>
+                                        <span>2</span>
+                                        <span><em>Please set the password for root here.</em></span>
+                                        <span>New password:</span>
+                                        <span>Re-enter new password:</span>
+                                        <span><em>Estimated strength of the password: 100</em></span>
+                                        <span><em>Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) :</em></span>
+                                        <span>Y</span>    
+                                    </pre>
+                                    <li>Orain frogatu behar dugu konexioa dagoen:</li>
+                                    <pre>
+                                        <span>systemctl status mysql.service</span>
+                                    </pre>
+                                    <li>Konexioa baldin badago gure Mysql-aren datu desberdinak aterako zaigu <i>Output</i>-ean</li>
+                                </ul>
+                           </ol>
+                    </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footerP1">
+                    <img  src="/Media/Footer/instagra.png">
+                    <a>@ServerWiki</a>
+                    <img  src="/Media/Footer/twitter-logo-6.png">
+                    <a>@ServerWiki</a> 
+                    <img src="/Media/Footer/gmail.png">
+                    <a>ServerWiki@gmail.com</a>
+            </div>
+            <div class="footerP2">
+                <a>@Talde5</a>
+            </div>
+        </footer>
+    </body>
+    </html>
