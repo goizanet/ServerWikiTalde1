@@ -115,26 +115,32 @@ section{
 
 .articulo1 h1 , h1{color: #5eb2bf;}
 .articulo1 h4{padding-left: 5%;}
-.articulo1 p , p{font-style: normal;}
-.articulo1 p{padding-left: 10%;}
+.articulo1 p , p{
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.articulo1 p{padding-left: 5%;}
 .articulo1 img{padding-left: 10%;}
 .articulo1 ol{
     margin-top: -3%;
-    padding-left: 11%;}
+    padding-left: 8%;}
 .articulo1 ol img{width: 50%; height: 40%; padding-top: 4%;}
-.articulo1 ol li{margin: 5%;}
+.articulo1 ol li{
+    margin: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
 
-iframe, img {
+/* Bideoen estiloak */
+
+iframe {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-p > a {
-    text-align: center; 
-    margin-left: 30%; 
-    margin-right: 30%; 
-}
+/* Pausuak listatuta */
 
 #pausuak {
     margin-top: -3%;
@@ -146,11 +152,15 @@ p > a {
     margin: 15px;
 }
 
+/* Deskargatzeko linka */
+
 #deskarga {
     text-align: center;
     display: inline-block;
     width: 100%;
 }
+
+/* Pausoak listatuta daudeneko argazkiak */
 
 #argazkiaPausoka {
     width: 80%;
@@ -182,6 +192,12 @@ pre span:before {
       padding: 0 .5em;
       margin-right: .5em;
       color: #cdedf6;
+}
+
+/* Bisitatuenak orria */
+
+.card {
+    width: 20%;
 }
 
 

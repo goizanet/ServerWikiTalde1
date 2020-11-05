@@ -19,7 +19,7 @@
                         <div class="navbar">
                             <a href="index.html">HASIERA</a> 
                             <a href="Bistaratuenak.html">BISITATUENAK</a>
-                            <a class="active" href="FreeNas1.html">ARTIKULUAK</a>
+                            <a class="active" href="FreeNas2.html">ARTIKULUAK</a>
                             <a href="Galderak.html">FAQ</a>
                         </div>
                 </div>
@@ -45,14 +45,80 @@
                 <div class="articulo1">
                     <h1>FTP</h1>
                         <h3>ZER DA, FTP-A?</h3>
-                        <p>TP-ak sare TCP batera konektatuta dauden sistemen arteko artxiboen transferentzia gauzatzeko 
+                        <p>&nbsp&nbspFTP-ak sare TCP batera konektatuta dauden sistemen arteko artxiboen transferentzia gauzatzeko 
                             erabiltzen den protokoloa da. Bezeroak zerbitzari batetara konektatu daiteke hortik artxiboak 
                             deskargatzeko edota artxiboak bidaltzeko, ekipo bakoitzean erabiltzen den sistema eragilea edozein dela ere.</p>
-                        <h3>NOLA EGINGO DUGU</h3>
-                        <p>AQUI SE TIENEN QUE METER CAPTURAS MASTODONTE</p>  
+                        
+                        <h3>NOLA EGINGO DUGU?</h3>
+                        <p>&nbsp&nbspFTP zerbitzua erabiltzeko bi makina behar ditugu, bat zerbitzari moduan eta bestea bezero moduan.<br>
+                           &nbsp&nbspBezero makina erabiltzeko FTP bezero bat instalatu behar dugu, ezagunena FileZilla da. Programa honekin oso erraz konektatu gaitezke zerbitzari batetara.<br>
+                           &nbsp&nbspBeste aldetik zerbitzaria muntatzeko hurrengo pausoak jarraitu beharko ditugu.
+                        </p>
+                        <ol id="pausuak">
+                            <li><b>vsftpd</b> programa instalatuko dugu hurrengo komandua exekutatuz:</li>
+                                <pre>
+                                    <span>sudo apt-get install vsftpd</span>
+                                </pre>
+                            <li>Orain, konfigurazio fitxategiaren kopia egin ahal izateko, hurrengo komandua exekutatuko dugu:</li>
+                                <pre>
+                                    <span>sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.original</span>
+                                </pre>
+                            <li>Jarraian, <i>Firewall</i>-a jarrita dagoen edo ez konprobatuko dugu hurrengo komandua exekutatuz:</li>
+                                <pre>
+                                    <span>sudo ufw status</span>
+                                </pre>
+                            <ul>
+                                <li><code>"ufw: command not found"</code> mezua agertzen bada ez kezkatu, firewall-a instalatu gabe dagoela esan nahi du, hurrengo pausora pasatu.
+                                </li>
+                                <li><i>Firewall</i>-a konfiguratu gabe baldin badago, hurrengo komanduak sar itzazu:</li>
+                                    <pre>
+                                        <span>sudo ufw allow 20/tcp</span>
+                                        <span>sudo ufw allow 21/tcp</span>
+                                        <span>sudo ufw allow 990/tcp</span>
+                                        <span>sudo ufw allow 40000:50000/tcp</span>
+                                    </pre>
+                                    <ul>
+                                        <li>Dena zuzen egin bada berriz exekutatu <code>“sudo ufw status”</code> eta mezu hau atera behar da <code>“Status: active”</code>.</li>
+                                    </ul>
+                            </ul>
+                            <li>Hurrengo pausoa erabiltzaileak kudeatzea da ez baduzu <i>‘root’</i> erabiltzailearekin bakarrakik konektatu ahal izatea, edo erabiltzaileak karpeta espezifiko batzuetan bakarrarrik mugitu ahal izatea.</li>
+                            <ul>
+                                <li>Erabiltzaile berri bat sortzeko hurrenko komandua sartu: </li>
+                                <pre>
+                                    <span>sudo adduser <i>erabiltzaileIzena</i></span>
+                                </pre>
+                                <li>Karpeta berri bat sortzeko hurrengo komanduak sartu:</li>
+                                <pre>
+                                    <span>sudo mkdir <i>fitxategiarenKokapena</i></span>
+                                </pre>
+                                <li>Hurrengo komandua sartzen bada hurrengoa zehaztuko da: karpeta hori erabiltzaile horren karpeta pertsonala izango dela.</li>
+                                <pre>
+                                    <span>sudo chown nobody:nogroup /home/<i>erabiltzaileIzena</i>/<i>sortuDuzunKarpeta</i></span>
+                                </pre>
+                                <li>Erabiltzaile horri, karpeta horren barruan mugitu daitekela bakarrik jarri nahi baldin badugu, hurrengo komandua sartuko dugu:</li>
+                                <pre>
+                                    <span>etc/vsftpd.conf</span>
+                                </pre>
+                                <ul>
+                                    <li>Erabiltzailea kaiolatzeko, hots, eman zaion direktoriotik kanpo nabigazioa galarazteko hurrengo komandua sartu: </li>
+                                    <pre>
+                                        <span>chroot_local_user=YES</span>
+                                    </pre>
+                                    <li>Hurrengo komanduak idazten badira fitxategian, erabiltzailea kaiolatuko den karpeta zehaztuko dugu: </li>
+                                    <pre>
+                                        <span>user_sub_token=$USER</span>
+                                        <span>local_root=/home/$USER/<i>sortuDuzunKarpeta</i></span>
+                                    </pre>
+                                </ul>
+                            </ul>
+                            <li>Azkenik, FTP bezeroan erabiltzaile izena, pasahitza eta ip helbidea sartu eta arazorik gabe konexioa gauzatu ahalko da.</li>
+                        </ol>
+                        <br>
                         <h3>TOPATU DITZAKEZUN ARAZOAK</h3>
-                        <p>• &nbsp Portuak blokeatuta egotea → Firewall-a aktibatuta badago, portu horiek baimendu beharko dituzu.</p>
-                        <p>• &nbsp Root erabiltzailea ez badu logeatzea lortzen → VM-a exekutatuko dugu eta kontsolan hurrengoa idatziko dugu: <b>systemctl restart ssh</b>. Ondoren berriz saiatuko gara.</p>                                  
+                        <ul>
+                            <li>&nbspPortuak blokeatuta egotea → Firewall-a aktibatuta badago, portu horiek baimendu beharko dituzu.</li>
+                            <li>&nbspRoot erabiltzailea ez badu logeatzea lortzen → VM-a exekutatuko dugu eta kontsolan hurrengoa idatziko dugu: <b>systemctl restart ssh</b>. Ondoren berriz saiatuko gara.</li>
+                        </ul>                                 
                     </div>
             </div>
         </div>
