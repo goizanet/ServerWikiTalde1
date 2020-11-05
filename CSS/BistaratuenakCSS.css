@@ -53,15 +53,22 @@ header{
     text-align: center;
 }
 
-.card1, .card2, .card3 {
+.card1 {
     display: inline-block;
-    width: fit-content;
+    width: 20%;
+    height: 250%;
     padding: 2%;
     margin: 2%;
-    margin-left: 70px;
-    text-align: center;
+    margin-left: 5%;
+    text-align: justify;
     background-color: #fff;
     
+}
+
+/*Argazkientamaina*/
+.card-img-top {
+    width: 100%;
+    height: 100%;
 }
 
 /* FOOTER */
