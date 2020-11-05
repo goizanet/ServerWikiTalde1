@@ -23,6 +23,9 @@ html{font-family: 'Secular One';}
         ;
         background-color:white;
         
+    text-align: justify;
+    text-justify: inter-word;
+        
     }
 
     /* Galdera atalaren propietateak */
