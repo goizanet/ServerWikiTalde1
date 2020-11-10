@@ -75,8 +75,7 @@ section{
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
-    margin: 0 4px;
-    
+    margin: 0 4px; 
 }  
 
 .pagination a.active {
@@ -185,17 +184,26 @@ pre span {
 }
 
 pre span:before {
-      counter-increment: line;
-      content: counter(line);
-      display: inline-block;
-      border-right: 1px solid #ddd;
-      padding: 0 .5em;
-      margin-right: .5em;
-      color: #cdedf6;
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 .5em;
+    margin-right: .5em;
+    color: #cdedf6;
 }
 
-/* Bisitatuenak orria */
+/*Gora igo botoia*/
+.GoraIgo a {
+    float: right;
+    background-color: #5EB1BF;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 5PX;
+}
 
+    /* Bisitatuenak orria */
 .card {
     width: 20%;
 }
